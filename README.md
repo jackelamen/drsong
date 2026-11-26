@@ -20,9 +20,9 @@ assets/img/clinic/      interior photos
 
 - Colours come from the clinic brochures (sky blue `#daebff`, indigo `#3e56aa`) plus warm oak/cream
   tones from the interior photos. The seal uses the official Yonsei navy `#003777`.
-- The logo matches the version at the bottom of the clinic's brochure: Yonsei seal plus
-  "연세와이즈정신건강의학과" set as one word in 연세본문체 (YonseiL), narrowed to 87.5% width, in gray `#939499`.
-  The text is converted to outlines, so the SVGs need no font files.
+- The logo text was traced from the logo at the bottom of the clinic's brochure image
+  ("about Dr. Song"), gray `#939499`. The Yonsei seal uses the official vector artwork.
+  The SVGs need no font files.
 - All page text uses Pretendard (jsDelivr CDN).
 - The hero photo (`reception-light.jpg`) was perspective-corrected: the original had about a 1.5° slope
   along the desk and floor.
@@ -34,10 +34,15 @@ assets/img/clinic/      interior photos
 - **Add gallery photos**: resize to about 1600px on the long side, save to `assets/img/clinic/`, and copy a
   `<figure class="g-item">` inside `.gallery`. Add `g-wide` (2x2) or `g-tall` (1x2) for bigger tiles.
 
+## Content policy
+
+Page text is limited to what the clinic supplied: name, address, hours, the doctor's titles, career,
+society roles and publications. Do not add claims about treatments, results or specialties without
+the doctor's approval (의료법 제56조, medical advertising rules).
+
 ## To do
 
 - Phone number / reservation link (not yet provided)
-- Confirm the services and test list in `#care`
 - Confirm the map pin (see Location below)
 
 ## Location

@@ -116,7 +116,8 @@ ul, ol { margin: 0; padding: 0; }
 .hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center; }
 .hero-place { font-size: 15px; font-weight: 600; color: var(--indigo-500); margin-bottom: 18px; }
 .hero h1 { font-size: clamp(30px, 3.6vw, 46px); color: var(--indigo-900); line-height: 1.3; letter-spacing: -0.035em; }
-.lead { margin-top: 24px; font-size: 18px; color: var(--text); max-width: 520px; }
+.lead { margin-top: 24px; font-size: 18px; color: var(--text); max-width: 520px; line-height: 1.8; }
+.lead strong { color: var(--ink); font-size: 20px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; }
 
 .today-card {
@@ -181,7 +182,6 @@ ul, ol { margin: 0; padding: 0; }
 .doctor-details { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; margin-top: 56px; padding-top: 48px; border-top: 1px solid #eef0f5; }
 .detail-col h3, .research h3 { font-size: 20px; margin-bottom: 22px; color: var(--indigo-900); }
 .research h3 { margin-bottom: 10px; }
-.research-summary { max-width: 680px; }
 .timeline { list-style: none; position: relative; }
 .timeline li { position: relative; padding: 0 0 14px 26px; }
 .timeline li::before { content: ""; position: absolute; left: 4px; top: 10px; width: 9px; height: 9px; border-radius: 50%; background: #fff; border: 2px solid var(--indigo-500); }
@@ -211,36 +211,12 @@ ul, ol { margin: 0; padding: 0; }
 .pub-title { color: var(--ink); line-height: 1.5; }
 .pub-meta { color: var(--muted); font-size: 13px; font-style: italic; margin-top: 2px; }
 
-/* Care */
-.care-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-.care-card { border-radius: var(--radius-lg); padding: 40px; border: 1px solid #eef0f5; background: #fff; box-shadow: var(--shadow-card); }
-.care-card-head { margin-bottom: 24px; }
-.care-tag { display: inline-block; font-size: 13px; font-weight: 700; padding: 5px 12px; border-radius: 999px; margin-bottom: 14px; }
-.care-child .care-tag { background: var(--sky-100); color: var(--indigo-700); }
-.care-adult .care-tag { background: #f3ebe2; color: #8a6443; }
-.care-card h3 { font-size: 24px; }
-.care-list { list-style: none; }
-.care-list li { padding: 16px 0; border-top: 1px solid #f0f1f5; display: flex; flex-direction: column; gap: 2px; }
-.care-list strong { color: var(--ink); font-weight: 600; }
-.care-list span { color: var(--muted); font-size: 15px; }
 
-.tests { margin-top: 72px; }
-.tests-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; margin-bottom: 28px; flex-wrap: wrap; }
-.tests-head h3 { font-size: 24px; }
-.test-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
-.test-note { margin-top: 20px; padding: 20px 26px; background: var(--sky-50); border-radius: var(--radius-md); }
-.test-note strong { color: var(--ink); margin-right: 10px; }
-.test-card { margin: 0; background: var(--sky-50); border-radius: var(--radius-lg); overflow: hidden; display: flex; flex-direction: column; }
-.test-img { aspect-ratio: 4 / 3; overflow: hidden; }
-.test-img img { width: 100%; height: 100%; object-fit: cover; }
-.test-card figcaption { padding: 24px 26px 28px; display: flex; flex-direction: column; gap: 6px; }
-.test-card strong { color: var(--ink); font-size: 18px; }
-.test-card span { font-size: 15px; color: var(--text); }
 
 /* Space / Gallery */
 .space { background: var(--cream); }
 .gallery {
-  display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 220px; gap: 16px;
+  display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 230px; gap: 16px;
   grid-auto-flow: dense;
 }
 .g-item { margin: 0; position: relative; overflow: hidden; border-radius: var(--radius-md); background: var(--oak-light); }
@@ -312,7 +288,6 @@ ul, ol { margin: 0; padding: 0; }
 
 @media (max-width: 1024px) {
   .doctor-card { padding: 48px 40px; }
-  .gallery { grid-template-columns: repeat(3, 1fr); }
 }
 
 @media (max-width: 900px) {
@@ -344,6 +319,7 @@ ul, ol { margin: 0; padding: 0; }
   .doctor-details { grid-template-columns: 1fr; gap: 40px; }
   .hours-grid, .location-grid { grid-template-columns: 1fr; gap: 40px; }
   .gallery { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 180px; }
+  .g-end { grid-column: span 2; }
   .footer-meta { text-align: left; }
 }
 
@@ -357,7 +333,6 @@ ul, ol { margin: 0; padding: 0; }
   .doctor-card { padding: 36px 20px; border-radius: 28px; }
   .doctor-name { font-size: 36px; }
   .research { padding: 28px 20px; }
-  .care-card { padding: 30px 22px; }
   .hours-card { padding: 8px 20px 24px; }
   .hours-table td { font-size: 16px; }
   .location-info { padding: 30px 22px; }
