@@ -24,7 +24,9 @@ assets/img/clinic/      interior photos
   letter-spacing -0.04em, gray `#939499`, sized and spaced to match the brochure footer logo.
   The text is converted to outlines, so the SVGs need no font files.
 - All page text uses Pretendard (jsDelivr CDN).
-- The hero photo (`reception-light.jpg`) was perspective-corrected: the original had about a 1.5° slope
+- Hero image `hero-family.webp` is an AI-generated photo supplied by the clinic, background removed
+  locally (rembg, BiRefNet portrait model). It must not be presented as real patients.
+- The gallery reception photo (`reception-light.jpg`) was perspective-corrected: the original had about a 1.5° slope
   along the desk and floor.
 
 ## Common edits
