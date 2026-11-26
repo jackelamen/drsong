@@ -31,7 +31,7 @@ assets/img/clinic/      interior photos
 
 ## Common edits
 
-- **Hours**: update the hero (`.hero-status`), the table in `#hours`, and the footer line in `index.html`.
+- **Hours**: update the table in `#hours` and the footer line in `index.html`.
   The site shows the regular schedule only. It does not compute "open now" because the clinic
   sometimes closes on short notice.
 - **Add gallery photos**: resize to about 1600px on the long side, save to `assets/img/clinic/`, and copy a
