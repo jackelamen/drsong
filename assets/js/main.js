@@ -1,28 +1,31 @@
 (function () {
   'use strict';
 
-  // ---------- Mobile nav ----------
+  // ---------- Header: hidden over the hero, slides in after scrolling past it ----------
+  var header = document.querySelector('.site-header');
+  var panel = document.querySelector('.hero-panel');
   var toggle = document.querySelector('.nav-toggle');
   var nav = document.getElementById('site-nav');
-  if (toggle && nav) {
-    toggle.addEventListener('click', function () {
-      var open = toggle.getAttribute('aria-expanded') === 'true';
-      toggle.setAttribute('aria-expanded', String(!open));
-      nav.classList.toggle('open', !open);
-    });
-    nav.addEventListener('click', function (e) {
-      if (e.target.tagName === 'A') {
-        toggle.setAttribute('aria-expanded', 'false');
-        nav.classList.remove('open');
-      }
-    });
-  }
+  var heroMenu = document.querySelector('.hero-menu');
+  var menuOpen = false;
 
-  // ---------- Header shadow on scroll ----------
-  var header = document.querySelector('.site-header');
-  var onScroll = function () { header.classList.toggle('scrolled', window.scrollY > 8); };
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
+  function update() {
+    var threshold = panel ? panel.offsetHeight * 0.55 : 80;
+    header.classList.toggle('show', menuOpen || window.scrollY > threshold);
+  }
+  function setMenu(open) {
+    menuOpen = open;
+    if (toggle) toggle.setAttribute('aria-expanded', String(open));
+    if (nav) nav.classList.toggle('open', open);
+    update();
+  }
+  if (toggle) toggle.addEventListener('click', function () { setMenu(!menuOpen); });
+  if (heroMenu) heroMenu.addEventListener('click', function () { setMenu(true); });
+  if (nav) nav.addEventListener('click', function (e) { if (e.target.tagName === 'A') setMenu(false); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && menuOpen) setMenu(false); });
+  window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update);
+  update();
 
   // ---------- Copy address ----------
   document.querySelectorAll('[data-copy]').forEach(function (btn) {

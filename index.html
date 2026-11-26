@@ -39,13 +39,12 @@
 <body>
   <a class="skip-link" href="#main">본문 바로가기</a>
 
-  <header class="site-header" id="top">
+  <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#top">
-        <img class="logo" src="assets/img/logo.svg" alt="연세와이즈정신건강의학과" width="364" height="36">
+        <img class="logo" src="assets/img/logo-indigo.svg" alt="연세와이즈정신건강의학과" width="364" height="36">
       </a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
-        <span class="sr-only">메뉴 열기</span>
+      <button class="nav-toggle" type="button" aria-label="메뉴" aria-expanded="false" aria-controls="site-nav">
         <span class="bar"></span><span class="bar"></span>
       </button>
       <nav class="site-nav" id="site-nav" aria-label="주요 메뉴">
@@ -59,22 +58,38 @@
 
   <main id="main">
     <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <h1 class="sr-only">연세와이즈정신건강의학과</h1>
-          <blockquote class="hero-quote">
-            <p><span>“진료의 핵심은</span> <span>사람을 이해하는 데 있다”</span></p>
-            <footer class="quote-by">— 송정은 원장</footer>
-          </blockquote>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#hours">진료 시간표 보기</a>
-            <a class="btn btn-ghost" href="#location">오시는 길</a>
-          </div>
+    <section class="hero" id="top">
+      <div class="hero-panel">
+        <div class="container hero-bar">
+          <nav class="hero-nav" aria-label="빠른 메뉴">
+            <a href="#doctor">의료진</a>
+            <a href="#space">둘러보기</a>
+            <a href="#hours">진료 시간</a>
+            <a href="#location">오시는 길</a>
+          </nav>
+          <button class="hero-menu" type="button" aria-label="메뉴 열기" aria-controls="site-nav">
+            <span class="bar"></span><span class="bar"></span>
+          </button>
         </div>
-        <div class="hero-visual" aria-hidden="true">
-          <span class="hero-ring"></span>
-          <img src="assets/img/hero-family.webp" alt="" width="1400" height="959" fetchpriority="high">
+
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <h1 class="hero-logo"><img src="assets/img/logo-indigo.svg" alt="연세와이즈정신건강의학과" width="1010" height="100"></h1>
+            <blockquote class="hero-quote">
+              <p>“진료의 핵심은 사람을 이해하는 데 있다”</p>
+              <footer class="quote-by">송정은 원장</footer>
+            </blockquote>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#hours">진료 시간표 보기</a>
+              <a class="btn btn-ghost" href="#location">오시는 길</a>
+            </div>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <span class="hero-glow"></span>
+            <span class="hero-ring"></span>
+            <span class="hero-ring-line"></span>
+            <img src="assets/img/hero-family.webp" alt="" width="1400" height="959" fetchpriority="high">
+          </div>
         </div>
       </div>
     </section>

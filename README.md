@@ -10,6 +10,7 @@ index.html              all page content (Korean)
 assets/css/style.css    styles; colour tokens at the top (:root)
 assets/js/main.js       mobile menu, header shadow, address copy
 assets/img/logo.svg     full logo (Yonsei seal + 연세와이즈정신건강의학과), brochure gray
+assets/img/logo-indigo.svg  indigo version used large in the hero and in the scrolled header
 assets/img/logo-white.svg / logo-mono.svg   variants for dark backgrounds / currentColor
 assets/img/emblem.svg, favicon.svg          seal only
 assets/img/dr-song.jpg  profile photo
@@ -28,6 +29,9 @@ assets/img/clinic/      interior photos
   locally (rembg, BiRefNet portrait model). It must not be presented as real patients.
 - The gallery reception photo (`reception-light.jpg`) was perspective-corrected: the original had about a 1.5° slope
   along the desk and floor.
+
+- Layout: the hero is a rounded panel holding the menu, the large logo, Dr. Song's quote and the photo.
+  The fixed header stays hidden until the visitor scrolls past about half the hero, then slides in.
 
 ## Common edits
 
