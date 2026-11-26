@@ -20,9 +20,9 @@ assets/img/clinic/      interior photos
 
 - Colours come from the clinic brochures (sky blue `#daebff`, indigo `#3e56aa`) plus warm oak/cream
   tones from the interior photos. The seal uses the official Yonsei navy `#003777`.
-- The logo text was traced from the logo at the bottom of the clinic's brochure image
-  ("about Dr. Song"), gray `#939499`. The Yonsei seal uses the official vector artwork.
-  The SVGs need no font files.
+- Logo: Yonsei seal (official vector) plus "연세와이즈정신건강의학과" in Pretendard SemiBold,
+  letter-spacing -0.04em, gray `#939499`, sized and spaced to match the brochure footer logo.
+  The text is converted to outlines, so the SVGs need no font files.
 - All page text uses Pretendard (jsDelivr CDN).
 - The hero photo (`reception-light.jpg`) was perspective-corrected: the original had about a 1.5° slope
   along the desk and floor.
