@@ -8,7 +8,7 @@ No build step: plain HTML, CSS and JS. Works on GitHub Pages, Netlify, Vercel or
 ```
 index.html              all page content (Korean)
 assets/css/style.css    styles; colour tokens at the top (:root)
-assets/js/main.js       mobile menu, "today" hours status (Asia/Seoul), address copy
+assets/js/main.js       mobile menu, header shadow, address copy
 assets/img/logo.svg     full logo (Yonsei seal + 연세와이즈정신건강의학과), brochure gray
 assets/img/logo-white.svg / logo-mono.svg   variants for dark backgrounds / currentColor
 assets/img/emblem.svg, favicon.svg          seal only
@@ -31,8 +31,9 @@ assets/img/clinic/      interior photos
 
 ## Common edits
 
-- **Hours**: update the table in `#hours` in `index.html` *and* the `SCHEDULE` object in `assets/js/main.js`
-  (minutes from midnight), plus the quick-info box and footer text.
+- **Hours**: update the hero (`.hero-status`), the table in `#hours`, and the footer line in `index.html`.
+  The site shows the regular schedule only. It does not compute "open now" because the clinic
+  sometimes closes on short notice.
 - **Add gallery photos**: resize to about 1600px on the long side, save to `assets/img/clinic/`, and copy a
   `<figure class="g-item">` inside `.gallery`. Add `g-wide` (2x2) or `g-tall` (1x2) for bigger tiles.
 
