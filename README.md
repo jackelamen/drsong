@@ -25,12 +25,11 @@ assets/img/clinic/      interior photos
   letter-spacing -0.04em, gray `#939499`, sized and spaced to match the brochure footer logo.
   The text is converted to outlines, so the SVGs need no font files.
 - All page text uses Pretendard (jsDelivr CDN).
-- Hero image `hero-family.webp` is an AI-generated photo supplied by the clinic, background removed
-  locally (rembg, BiRefNet portrait model). It must not be presented as real patients.
 - The gallery reception photo (`reception-light.jpg`) was perspective-corrected: the original had about a 1.5° slope
   along the desk and floor.
 
-- Layout: the hero is a rounded panel holding the menu, the large logo, Dr. Song's quote and the photo.
+- Hero: an arched doorway (from the clinic's reception arch) holding the logo, Dr. Song's quote and two
+  buttons, with outline arches behind it and faint diagonal light like the sun through the blinds.
   The fixed header stays hidden until the visitor scrolls past about half the hero, then slides in.
 
 ## Common edits

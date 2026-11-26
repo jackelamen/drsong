@@ -3,7 +3,7 @@
 
   // ---------- Header: hidden over the hero, slides in after scrolling past it ----------
   var header = document.querySelector('.site-header');
-  var panel = document.querySelector('.hero-panel');
+  var panel = document.querySelector('.hero');
   var toggle = document.querySelector('.nav-toggle');
   var nav = document.getElementById('site-nav');
   var heroMenu = document.querySelector('.hero-menu');
